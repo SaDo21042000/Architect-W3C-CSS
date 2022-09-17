@@ -1,3 +1,154 @@
+/* reponsive start */
+
+/* FOR MOBILE PHONE */
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 460px !important;
+    margin: 0 auto;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .header-text {
+    top: 35% !important;
+  }
+
+  div.header-text h1 span:nth-child(2) {
+    display: none;
+  }
+
+  .content-title__item {
+    padding: 16px 0px 8px 0px !important;
+    font-size: 18px;
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 0px !important;
+  }
+
+  .house {
+    margin: 0 8px;
+    position: relative;
+    margin-bottom: 8px !important;
+  }
+
+  div.project-item div.house:nth-child(1) {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+
+  div.project-item div.house:nth-child(4) {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+
+  .house-name {
+    font-size: 18px !important;
+  }
+
+  .about-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form input {
+    box-sizing: border-box;
+  }
+}
+
+/* FOR TABLETS */
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .container {
+    max-width: 720px !important;
+    margin: 0 auto;
+  }
+
+  .nav-right {
+    margin-right: 40px;
+  }
+
+  .header-text {
+    top: 35% !important;
+    right: 27% !important;
+  }
+
+  div.header-text h1 span:nth-child(2) {
+    display: inline-block !important;
+  }
+
+  .content-title__item {
+    padding: 16px 0px 8px 0px !important;
+    font-size: 18px;
+  }
+
+  .project-item {
+    display: flex;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 0px !important;
+  }
+
+  .house {
+    margin: 0 !important;
+    position: relative;
+    margin-bottom: 18px !important;
+    display: inline-block !important;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  div.house:nth-child(odd) {
+    padding-right: 16px;
+  }
+
+  div.project-item div.house:nth-child(1) {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  div.project-item div.house:nth-child(4) {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .house-name {
+    font-size: 18px !important;
+  }
+
+  .about-main {
+    display: flex;
+    flex-direction: row !important;
+    flex-flow: wrap !important;
+    justify-content: space-evenly;
+    margin-bottom: 0px !important;
+  }
+
+  .about-profile {
+    width: 50% !important;
+    box-sizing: border-box !important;
+    margin: 0px !important;
+  }
+
+  div.about-profile:nth-child(odd) {
+    padding-right: 8px;
+  }
+
+  div.about-profile:nth-child(even) {
+    padding-left: 8px;
+  }
+
+  .contact-form input {
+    box-sizing: border-box;
+  }
+}
+/* reponsive end */
+
 /* nav start */
 .nav {
   position: fixed;
@@ -24,6 +175,7 @@
 
 .nav-right {
   float: right;
+  margin-right: 16px;
 }
 /* nav start */
 
@@ -71,16 +223,14 @@ div.header-text h1 span:nth-child(2) {
 }
 
 .content-title__item {
-    padding: 32px 0px 16px 0px;
-    font-size: 24px;
-   
-   
+  padding: 32px 0px 16px 0px;
+  font-size: 24px;
 }
 
 .content-title__item h3 {
-    font-weight: 400;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 16px;
+  font-weight: 400;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px;
 }
 
 /* project start */
@@ -112,21 +262,17 @@ div.project-item div.house:nth-child(4) {
 }
 
 .house-name {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 8px 16px;
-    background-color: black;
-    color: white;
-    font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
 }
 /* project end */
 
 /* about start */
-.about {
-
-}
-
 .about-descript p {
   margin-top: 0px;
 }
@@ -177,6 +323,63 @@ div.about-main div.about-profile:nth-child(4) {
 .about-profile p button:hover {
   background-color: #ccc;
 }
-
-
 /* about end */
+
+/* contact start */
+.contact-descript {
+  font-size: 20px;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.contact-form button {
+  text-transform: uppercase;
+  padding: 8px 16px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.contact-form button:hover {
+  background-color: #ccc;
+  color: black;
+}
+/* contact end */
+
+/* Image start */
+.map {
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.map img {
+  width: 100%;
+}
+/* Image end */
+
+/* footer start */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 24px 0px;
+}
+
+.footer p {
+  text-align: center;
+  color: white;
+}
+
+.footer p a:visited {
+  color: white;
+}
+
+.footer p a:hover {
+  color: #4caf50;
+}
+/* footer end */
