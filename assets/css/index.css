@@ -336,6 +336,7 @@ div.about-main div.about-profile:nth-child(4) {
   margin-bottom: 16px;
   border: 1px solid #ccc;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 .contact-form button {
