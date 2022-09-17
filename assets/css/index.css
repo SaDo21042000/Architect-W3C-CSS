@@ -120,5 +120,63 @@ div.project-item div.house:nth-child(4) {
     color: white;
     font-size: 20px;
 }
-
 /* project end */
+
+/* about start */
+.about {
+
+}
+
+.about-descript p {
+  margin-top: 0px;
+}
+
+.about-main {
+  display: flex;
+}
+
+.about-profile {
+  margin: 8px;
+}
+
+div.about-main div.about-profile:nth-child(1) {
+  margin-left: 0;
+}
+
+div.about-main div.about-profile:nth-child(4) {
+  margin-right: 0;
+}
+
+.about-profile img {
+  width: 100%;
+}
+
+.about-profile h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.about-profile p:nth-child(3) {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.about-descript::after {
+  content: "";
+  display: table;
+  height: 20px;
+  clear: both;
+}
+
+.about-profile p button {
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+}
+
+.about-profile p button:hover {
+  background-color: #ccc;
+}
+
+
+/* about end */
